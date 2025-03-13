@@ -1,4 +1,65 @@
-h2{
-    background-color: black;
+
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+.fejlec{
+    width: 100%;
+    background-image: url("../img/banner_fruits.png");
+    height: 600px; 
+    background-size: cover; 
+    background-position: bottom center;
+    background-repeat: no-repeat; 
+    background-position: bottom center;
+}
+
+.fejlec>h1{
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7); /* Szürke árnyék */
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgba(2, 138, 158, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     color: white;
+    font-variant: small-caps;
+    font-weight: bold;
+    border: 10px double white;
+
+}
+
+#nav-turkiz{
+    background-color: rgb(2, 138, 158) !important;
+}
+
+.nav-item{
+    border-top: double rgb(2, 138, 158) 3px;
+    border-bottom: double rgb(2, 138, 158) 3px;
+}
+
+.nav-item:hover{
+    border-top: double white 3px;
+    border-bottom: double white 3px;
+}
+
+.floater{
+    float: right;
+    grid-area: img;
+}
+
+.basic>p{
+    grid-area: text;
+}
+
+.basic{
+    display: grid;
+    grid-template-columns: auto 100px;
+    grid-template-rows: 100px 100px;
+    grid-template-areas: 
+    'text img'
+    'text text'
+    ;
 }
